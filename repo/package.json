@@ -11,13 +11,17 @@
     "workbox-expiration": "^7.0.0",
     "workbox-precaching": "^7.0.0",
     "workbox-routing": "^7.0.0",
-    "workbox-strategies": "^7.0.0"
+    "workbox-strategies": "^7.0.0",
+    "netlify-cli": "^15.0.0",
+    "@netlify/functions": "^1.6.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "netlify deploy --prod",
+    "deploy:api": "netlify deploy --prod --dir build --functions ./api"
   },
   "eslintConfig": {
     "extends": ["react-app"]
